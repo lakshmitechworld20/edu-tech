@@ -1,0 +1,30 @@
+*{
+  margin:0px;
+  padding:0px;
+  }
+
+.App {
+  text-align: center;
+}
+
+form {
+  background-color: gray;
+  color: whitesmoke;
+  border-radius: 5px;
+  width: 70px;
+  max-width: 200px;
+  min-width: 400px;
+  margin: auto;
+  padding: 15px 15px 20px 20px;
+}
+label {
+  display: block;
+}
+input[type="submit"] {
+  background-color: darkgrey;
+  border-color: white;
+  color: white;
+  font-size: 1.33rem;
+  min-height: 2.0em;
+  background-origin: padding-box;
+}
