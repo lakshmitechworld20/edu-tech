@@ -1,1 +1,0 @@
-export const mongoDBURL = "mongodb+srv://lakshmitechworld20:<password>@cluster0.dajpgo7.mongodb.net/"
