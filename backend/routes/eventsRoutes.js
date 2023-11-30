@@ -31,7 +31,9 @@ router.post("/newuser", async(request,response)=>{
         firstName: request.body.firstName, 
         lastName: request.body.lastName,
         emailId: request.body.emailId,
-        password:request.body.password
+        password:request.body.password,
+        gender: request.body.gender,
+        accounttype:request.body.accounttype
     } 
     //User model associated to moongose API which internally refereing current connection
     const user= await User.create(newuserobj);

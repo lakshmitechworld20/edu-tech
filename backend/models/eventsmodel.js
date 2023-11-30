@@ -16,6 +16,14 @@ const userDetails=mongoose.Schema({
     password:{
         type:String,
         required:true
+    },
+    gender:{
+        type:String,
+        required:true
+    },
+    accounttype:{
+        type:String,
+        required:true
     }
     
 });

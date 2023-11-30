@@ -1,30 +1,58 @@
-*{
-  margin:0px;
-  padding:0px;
-  }
-
-.App {
+.app{
   text-align: center;
 }
+.registration-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.radio-button-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin: 15px;
+  color: #007bff;
+  
+}
 
-form {
-  background-color: gray;
-  color: whitesmoke;
-  border-radius: 5px;
-  width: 70px;
-  max-width: 200px;
-  min-width: 400px;
-  margin: auto;
-  padding: 15px 15px 20px 20px;
+label {
+  margin-bottom: 10px;
+}
+
+input {
+  margin-right: 5px;
+}
+
+.styleicon{
+  color: #007bff;
 }
 label {
-  display: block;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
 }
-input[type="submit"] {
-  background-color: darkgrey;
-  border-color: white;
-  color: white;
-  font-size: 1.33rem;
-  min-height: 2.0em;
-  background-origin: padding-box;
+
+input {
+  margin-left: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.gender-radio {
+  display: flex;
+  margin-bottom: 15px;
+  color: #007bff;
+  justify-content: space-around;
+}
+
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
