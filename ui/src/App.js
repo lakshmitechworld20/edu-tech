@@ -37,14 +37,20 @@ const handleSubmit = (e)=> {
    fetch(targetapi, requestOptions).then(response => {response.json();
     setTimeout(() => {
       setSuccessMessage('Registration Successful!');
+      updateNewUser({
+        firstName: '',
+        lastName: '',
+        emailId: '',
+        password: '',
+        accounttype:'',
+        gender:''
+      });
     }, 1000);
   })
    .catch(error =>{
 
     console.error("there was an error!", error);
    } )}
-
-  
 
 
   return (
