@@ -9,12 +9,15 @@ function App() {
 
 const [newUser,updateNewUser] = useState({firstName:"",lastName:"",emailId:"",password:"",gender:"",accounttype:""});
 
+const [successMessage, setSuccessMessage] = useState('');
 
 useEffect(()=>{
 
   let targetapi = "http://localhost:3001/events/newuser";
 
   fetch(targetapi).then(response => response.json()).then(response =>{
+    alert(response);
+
     updateNewUser(response);
   } )
 },[])
@@ -31,8 +34,11 @@ const handleSubmit = (e)=> {
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(newUser)
     }
-    alert(JSON.stringify(newUser));
-   fetch(targetapi, requestOptions).then(response => response.json())
+   fetch(targetapi, requestOptions).then(response => {response.json();
+    setTimeout(() => {
+      setSuccessMessage('Registration Successful!');
+    }, 1000);
+  })
    .catch(error =>{
 
     console.error("there was an error!", error);
@@ -104,7 +110,6 @@ const handleSubmit = (e)=> {
          
         <div className="gender-radio">
         <label>
-          <FaMale/>
           <input
             type="radio"
             name="gender"
@@ -113,7 +118,6 @@ const handleSubmit = (e)=> {
             onChange={(e)=>updateNewUser({...newUser,gender:e.target.value})} 
           />
         Male
-        <FaFemale/>
           <input
             type="radio"
             name="gender"
@@ -129,6 +133,7 @@ const handleSubmit = (e)=> {
 
 
       </form>
+      {successMessage && <p className="success-message">{successMessage}</p>}
       </div>
       );
 
