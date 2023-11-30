@@ -48,8 +48,10 @@ const handleSubmit = (e)=> {
 
 
   return (
+
+    <div class="card">
 <div className="app">
-<h1> Registration </h1>
+<h2 class="heading"> Registration </h2>
    
       <form className="registration-form" onSubmit={handleSubmit}>
 
@@ -74,9 +76,9 @@ const handleSubmit = (e)=> {
       <div >
       <label>
 
-      <FaUser className="styleicon"/>
+      <FaUser className="styleicon" />
 
-        <input class="input-field" type="text" 
+        <input class="input-field" type="text" placeholder="First Name"
         value={newUser.firstName}
         onChange={(e)=>updateNewUser({...newUser,firstName:e.target.value})} />
 </label>
@@ -85,7 +87,7 @@ const handleSubmit = (e)=> {
         <label>
 
         <FaUser className="styleicon"/>
-        <input class="input-field" type="text" 
+        <input class="input-field" type="text" placeholder="Last Name"
         value={newUser.lastName}
         onChange={(e)=>updateNewUser({...newUser,lastName:e.target.value})} />
 </label>
@@ -94,7 +96,7 @@ const handleSubmit = (e)=> {
 
         <label>
           <FaEnvelope className="styleicon"/>
-                  <input class="input-field" type="text" 
+                  <input class="input-field" type="text" placeholder="E Mail"
         value={newUser.emailId}
         onChange={(e)=>updateNewUser({...newUser,emailId:e.target.value})} />
 </label>
@@ -102,7 +104,7 @@ const handleSubmit = (e)=> {
         <div >
         <label>
           <FaLock className="styleicon"/>
-        <input class="input-field" type="password" 
+        <input class="input-field" type="password" placeholder="Password"
         value={newUser.password}
         onChange={(e)=>updateNewUser({...newUser,password:e.target.value})} />
 </label>
@@ -129,11 +131,14 @@ const handleSubmit = (e)=> {
         </label>
       </div>
 
+      <p class="ac" >already have account? <bold><u class="open">Login</u></bold> </p>
+
         <button type="submit"> Submit </button>
 
 
       </form>
       {successMessage && <p className="success-message">{successMessage}</p>}
+      </div>
       </div>
       );
 

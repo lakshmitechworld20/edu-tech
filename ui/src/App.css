@@ -1,6 +1,20 @@
+.card {
+
+  width: 33%;
+	box-shadow: 0px 0px 10px 0px #444444;
+	border-radius: 10px;
+  margin-left: 450px;
+}
+
 .app{
   text-align: center;
 }
+.heading {
+
+  color: rgb(78, 78, 78);
+  margin-top: 45px;
+}
+
 .registration-form {
   max-width: 400px;
   margin: 0 auto;
@@ -19,10 +33,6 @@
   margin-top: 50px;
 }
 
-label {
-  margin-bottom: 10px;
-}
-
 input {
   margin-right: 5px;
 }
@@ -34,6 +44,7 @@ label {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  color: rgb(78, 78, 78);
 }
 
 input {
@@ -48,14 +59,22 @@ input {
   color: #007bff;
   justify-content: space-around;
 }
+.ac {
 
+  margin-top: 10px;
+}
+.open {
 
+  color: darkblue;
+
+}
 button {
   background-color: #007bff;
   color: #fff;
   padding: 10px 15px;
   border: none;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 button:hover {
