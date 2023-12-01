@@ -1,8 +1,8 @@
-import express, { urlencoded } from "express";
+import express from "express";
  //import userDetails from './models/eventsmodel.js';
  //import Event from '../models/eventsmodel.js';
- import {User, UserLogin} from "../models/eventsmodel.js";
- import bodyParser from "body-parser";
+ import { User } from "../models/eventsmodel.js";
+import bodyParser from "body-parser";
  var urlencodedParser = bodyParser.urlencoded({extended: false})
  
 const router = express.Router();

@@ -1,5 +1,5 @@
-import {useEffect, useState} from "react";
-import { FaUser, FaEnvelope, FaLock, FaGenderless, FaMale, FaFemale } from 'react-icons/fa';
+import { useEffect, useState } from "react";
+import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
 
 import './App.css';
 
