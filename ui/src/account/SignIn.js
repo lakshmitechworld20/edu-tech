@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { FaEnvelope, FaLock } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
-import './App.css';
-
+import '../App.css';
+ 
 
 function SignIn() {
 
@@ -80,8 +81,9 @@ const handleSubmit = (e)=> {
          
         
 
-      <p class="ac" >Don't have an account? <bold><u class="open">Register here</u></bold> </p>
-
+      <p class="ac" >Don't have an account?  {  <Link to="register-user">Register here</Link> }  
+       </p>
+      
         <button type="submit"> Sign In </button>
 
 
