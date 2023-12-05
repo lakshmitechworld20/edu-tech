@@ -28,18 +28,18 @@ const userDetails=mongoose.Schema({
     
 });
 
-const userLogin=mongoose.Schema({
+// const userLogin=mongoose.Schema({
 
- emailId:{
-        type:String,
-        required:true  
-    },
-    password:{
-        type:String,
-        required:true
-    }
+//     emailId:{
+//         type:String,
+//         required:true  
+//     },
+//     password:{
+//         type:String,
+//         required:true
+//     }
     
-});
+// });
  
 export const User = mongoose.model("User",userDetails);
-export const UserLogin = mongoose.model("UserLogin",userLogin);
+// export const UserLogin = mongoose.model("UserLogin",userLogin);
